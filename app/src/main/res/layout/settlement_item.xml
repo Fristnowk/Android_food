@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/selectedImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/ic_launcher" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/selectedName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/renminbi" />
+                <TextView
+                    android:id="@+id/selectedPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center|left"
+                    android:text="0.0元/份"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/subtractButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white"
+                    android:text="－"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:id="@+id/selectedNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+                <Button
+                    android:id="@+id/addButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:text="＋"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    >
+
+                </Button>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/remarksText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:drawableLeft="@mipmap/edit"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

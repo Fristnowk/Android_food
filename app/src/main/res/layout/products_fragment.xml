@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@color/purple_200"
+        android:gravity="bottom|center"
+        android:paddingBottom="15dp"
+        android:text="全部小吃"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.8"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/leftRecycler"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_weight="3" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rightRecycler"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_weight="7" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:filterTouchesWhenObscured="true"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:orientation="horizontal">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        >
+
+
+        <!--home1,新品-->
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:id="@+id/btnHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/imageHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.8"
+                    android:src="@mipmap/home1">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/textHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="新品"
+                    android:layout_weight="2.2"
+                    android:textColor="@color/black"
+
+                    >
+
+                </TextView>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--product2,点菜-->
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:id="@+id/btnProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="5">
+                <ImageView
+                    android:id="@+id/imageProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.8"
+                    android:src="@mipmap/product2">
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/textProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="点菜"
+                    android:layout_weight="2.2"
+                    android:textColor="@color/black"
+                    >
+
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--settlement,下单-->
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:id="@+id/btnSettlement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="5">
+                <ImageView
+                    android:id="@+id/imageSettlement"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.8"
+                    android:src="@mipmap/settlement2">
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/textSettlement"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="下单"
+                    android:layout_weight="2.2"
+                    android:textColor="@color/black"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--user,用户 "我的"-->
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:id="@+id/btnUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="5">
+                <ImageView
+                    android:id="@+id/imageUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.8"
+                    android:src="@mipmap/user2">
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/textUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="我的"
+                    android:layout_weight="2.2"
+                    android:textColor="@color/black"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
